@@ -522,16 +522,17 @@
 		<footer>
 			<div class="container">
 				<p>
-					&copy; 2025 Practice Pro Volleyball. All rights reserved. |
+					&copy; <span id="current-year"></span> Practice Pro
+					Volleyball. All rights reserved. |
 					<a href="privacy.html">Privacy Policy</a> |
 					<a href="terms.html">Terms of Service</a>
 				</p>
 
 				<p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8">
-					<strong
-						>Practice Pro Volleyball is a registered DBA of Aaron
-						McDonald.</strong
-					>
+					<strong>
+						Practice Pro Volleyball is a registered DBA of Aaron
+						McDonald.
+					</strong>
 					All content, products, and services offered on this site are
 					legally owned and operated by Aaron McDonald.
 				</p>
@@ -585,6 +586,13 @@
 				el.style.transform = "translateY(30px)";
 				el.style.transition = "all 0.6s ease";
 				observer.observe(el);
+			});
+
+			document.addEventListener("DOMContentLoaded", () => {
+				const yearSpan = document.getElementById("current-year");
+				if (yearSpan) {
+					yearSpan.textContent = new Date().getFullYear();
+				}
 			});
 		</script>
 	</body>
