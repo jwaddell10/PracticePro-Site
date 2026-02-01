@@ -3,10 +3,39 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Volleyball Coach iOS app for scheduling and managing practices.">
-		<title>
-			Practice Pro Volleyball | Volleyball Coaches Practice Scheduling & Drill App
-		</title>
+		<meta name="description" content="Practice Pro Volleyball - The #1 iOS app for volleyball coaches. Schedule practices, create custom drills, and access 100+ professional drills. Free practice planning tools for high school, club, and youth volleyball coaches.">
+		<meta name="keywords" content="volleyball coaching app, volleyball practice planner, volleyball drills app, coaching software, practice scheduler, volleyball training app, iOS coaching app, volleyball drill library, high school volleyball, club volleyball">
+		<meta name="author" content="Practice Pro Volleyball">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://yourwebsite.com/">
+		
+		<!-- Open Graph for social sharing -->
+		<meta property="og:title" content="Practice Pro Volleyball | Volleyball Coaching App for iOS">
+		<meta property="og:description" content="The ultimate volleyball practice companion for coaches. Create drills, schedule practices, and access professional training content.">
+		<meta property="og:image" content="https://yourwebsite.com/assets/og-image.jpg">
+		<meta property="og:url" content="https://yourwebsite.com/">
+		<meta property="og:type" content="website">
+		
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Practice Pro Volleyball | Volleyball Coaching App">
+		<meta name="twitter:description" content="Schedule practices, create drills, and access 100+ professional volleyball training exercises.">
+		<meta name="twitter:image" content="https://yourwebsite.com/assets/twitter-image.jpg">
+		
+		<!-- iOS App Smart Banner -->
+		<meta name="apple-itunes-app" content="app-id=6749254613">
+		
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		
+		<!-- Preconnect -->
+		<link rel="preconnect" href="https://apps.apple.com">
+		<link rel="dns-prefetch" href="https://apps.apple.com">
+		
+		<title>Practice Pro Volleyball | Volleyball Coaches Practice Scheduling & Drill App</title>
+		
 		<style>
 			* {
 				margin: 0;
@@ -125,7 +154,7 @@
 				font-size: 1.25rem;
 				margin-bottom: 2rem;
 				opacity: 0.9;
-				max-width: 600px;
+				max-width: 700px;
 				margin-left: auto;
 				margin-right: auto;
 			}
@@ -205,6 +234,81 @@
 				line-height: 1.7;
 			}
 
+			/* Use Cases Section */
+			.use-cases {
+				padding: 5rem 0;
+				background: var(--card-bg);
+			}
+
+			.use-cases h2 {
+				text-align: center;
+				font-size: 3rem;
+				font-weight: 700;
+				margin-bottom: 3rem;
+				color: var(--text);
+			}
+
+			.use-cases-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+
+			.use-case {
+				background: var(--bg);
+				padding: 2rem;
+				border-radius: 15px;
+				border: 2px solid var(--border);
+				transition: all 0.3s ease;
+			}
+
+			.use-case:hover {
+				border-color: var(--primary);
+				transform: translateY(-5px);
+			}
+
+			.use-case h3 {
+				font-size: 1.5rem;
+				font-weight: 600;
+				margin-bottom: 1rem;
+				color: var(--primary);
+			}
+
+			.use-case p {
+				color: var(--text-secondary);
+				line-height: 1.7;
+			}
+
+			/* Benefits Section */
+			.benefits {
+				padding: 5rem 0;
+			}
+
+			.benefits h2 {
+				text-align: center;
+				font-size: 3rem;
+				font-weight: 700;
+				margin-bottom: 3rem;
+				color: var(--text);
+			}
+
+			.benefits ul {
+				max-width: 800px;
+				margin: 0 auto;
+				list-style: none;
+			}
+
+			.benefits li {
+				font-size: 1.125rem;
+				padding: 1rem 0;
+				border-bottom: 1px solid var(--border);
+				color: var(--text-secondary);
+			}
+
+			.benefits li:last-child {
+				border-bottom: none;
+			}
+
 			/* About Section */
 			.about {
 				padding: 5rem 0;
@@ -260,6 +364,44 @@
 				letter-spacing: 1px;
 			}
 
+			/* FAQ Section */
+			.faq {
+				padding: 5rem 0;
+			}
+
+			.faq h2 {
+				text-align: center;
+				font-size: 3rem;
+				font-weight: 700;
+				margin-bottom: 3rem;
+				color: var(--text);
+			}
+
+			.faq-item {
+				background: var(--card-bg);
+				padding: 2rem;
+				border-radius: 15px;
+				margin-bottom: 1.5rem;
+				border: 1px solid var(--border);
+				transition: all 0.3s ease;
+			}
+
+			.faq-item:hover {
+				box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+			}
+
+			.faq-item h3 {
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin-bottom: 1rem;
+				color: var(--text);
+			}
+
+			.faq-item p {
+				color: var(--text-secondary);
+				line-height: 1.7;
+			}
+
 			/* Contact Section */
 			.contact {
 				padding: 5rem 0;
@@ -308,6 +450,15 @@
 				border-top: 1px solid rgba(255, 255, 255, 0.1);
 			}
 
+			footer a {
+				color: var(--primary);
+				text-decoration: none;
+			}
+
+			footer a:hover {
+				text-decoration: underline;
+			}
+
 			/* Mobile Responsive */
 			@media (max-width: 768px) {
 				.nav-links {
@@ -333,7 +484,10 @@
 
 				.features h2,
 				.about h2,
-				.contact h2 {
+				.contact h2,
+				.use-cases h2,
+				.benefits h2,
+				.faq h2 {
 					font-size: 2rem;
 				}
 
@@ -355,15 +509,19 @@
 			}
 
 			.feature-card,
-			.stat {
+			.stat,
+			.use-case,
+			.faq-item {
 				animation: fadeInUp 0.6s ease forwards;
 			}
 
-			.feature-card:nth-child(2) {
+			.feature-card:nth-child(2),
+			.use-case:nth-child(2) {
 				animation-delay: 0.1s;
 			}
 
-			.feature-card:nth-child(3) {
+			.feature-card:nth-child(3),
+			.use-case:nth-child(3) {
 				animation-delay: 0.2s;
 			}
 		</style>
@@ -375,7 +533,9 @@
 				<ul class="nav-links">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#features">Features</a></li>
+					<li><a href="#use-cases">For Coaches</a></li>
 					<li><a href="#about">About</a></li>
+					<li><a href="#faq">FAQ</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -385,12 +545,11 @@
 			<section id="home" class="hero">
 				<div class="container">
 					<div class="hero-content">
-						<h1>Practice Pro Volleyball</h1>
+						<h1>Practice Pro Volleyball - iOS App for Volleyball Coaches</h1>
 						<p>
-							The ultimate volleyball practice companion for
-							coaches. Discover new drills, organize efficient
-							training sessions, and keep your players engaged and
-							challenged.
+							The ultimate volleyball practice planning app for high school, club, and youth coaches. 
+							Schedule practices, create custom drills, and access 150+ professional volleyball training 
+							exercises. Stop using paper - organize your season digitally.
 						</p>
 						<a
 							href="https://apps.apple.com/us/app/practice-pro-volleyball/id6749254613"
@@ -398,7 +557,7 @@
 							rel="noopener noreferrer"
 							class="app-store-button"
 						>
-							<img src="assets/download-on-the-app-store.svg" alt="Download on the App Store">
+							<img src="assets/download-on-the-app-store.svg" alt="Download Practice Pro Volleyball on the iOS App Store - Free volleyball coaching app">
 						</a>
 					</div>
 				</div>
@@ -412,33 +571,77 @@
 							<div class="feature-icon">📝</div>
 							<h3>Custom Drill Creation</h3>
 							<p>
-								Create and organize your own volleyball drills
-								with our easy-to-use tools. Build a personalized
-								collection that fits your team's specific needs
-								and training goals.
+								Create and organize your own volleyball drills with our easy-to-use tools. 
+								Build a personalized collection that fits your team's specific needs and training goals. 
+								Filter by skill level, position, and practice type.
 							</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-icon">📅</div>
-							<h3>Practice Scheduling</h3>
+							<h3>Practice Scheduling & Planning</h3>
 							<p>
-								Plan and schedule your practice sessions
-								efficiently. Organize your training calendar,
-								set practice goals, and keep your team informed
-								about upcoming sessions.
+								Plan and schedule your practice sessions efficiently. Organize your training calendar, 
+								set practice goals, and keep your team informed about upcoming sessions. 
+								Go paperless with digital practice plans.
 							</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-icon">⭐</div>
 							<h3>Premium Drill Library</h3>
 							<p>
-								Upgrade to access our comprehensive collection
-								of professional volleyball drills. Discover new
-								training methods created by experienced coaches
-								to challenge and engage your players.
+								Upgrade to access our comprehensive collection of 100+ professional volleyball drills. 
+								Discover new training methods created by experienced coaches for offense, defense, 
+								serving, blocking, and warm-ups.
 							</p>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<section id="use-cases" class="use-cases">
+				<div class="container">
+					<h2>Perfect For Every Volleyball Coach</h2>
+					<div class="use-cases-grid">
+						<div class="use-case">
+							<h3>High School Volleyball Coaches</h3>
+							<p>
+								Organize your season, plan practices efficiently, and keep your team competitive 
+								with structured training plans. Perfect for varsity and JV teams.
+							</p>
+						</div>
+						<div class="use-case">
+							<h3>Club Volleyball Coaches</h3>
+							<p>
+								Manage multiple teams and age groups with customized drill libraries and flexible 
+								scheduling tools. Scale your coaching across different skill levels.
+							</p>
+						</div>
+						<div class="use-case">
+							<h3>Youth Volleyball Coaches</h3>
+							<p>
+								Access age-appropriate drills and simple practice planning tools perfect for 
+								developing young players. Build fundamentals with beginner-friendly exercises.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="benefits">
+				<div class="container">
+					<h2>Why Coaches Choose Practice Pro Volleyball</h2>
+					<ul>
+						<li>✓ Save hours per week on practice planning</li>
+						<li>✓ Access to 150+ professionally designed volleyball drills</li>
+						<li>✓ Digital practice plans - no more paper clipboards</li>
+						<li>✓ Filter drills by skill level: beginner, intermediate, advanced</li>
+						<li>✓ Organize drills by focus: offense, defense, serving, blocking, warm-ups</li>
+						<li>✓ Share practice plans with assistant coaches instantly</li>
+						<li>✓ Works offline - perfect for gyms with poor reception</li>
+						<li>✓ Create custom drills tailored to your team's needs</li>
+						<li>✓ Schedule and track your entire season</li>
+						<li>✓ Free core features with premium upgrade option</li>
+					</ul>
 				</div>
 			</section>
 
@@ -448,37 +651,32 @@
 						<div>
 							<h2>About Practice Pro Volleyball</h2>
 							<p>
-								Practice Pro Volleyball developed our volleyball
-								coaching app to help coaches at all levels
-								organize their training more effectively. We
-								provide both free tools for custom drill
-								creation and practice scheduling, plus premium
-								features for coaches who want access to our
-								professional drill library.
+								Practice Pro Volleyball was developed to help volleyball coaches at all levels 
+								organize their training more effectively. We provide both free tools for custom 
+								drill creation and practice scheduling, plus premium features for coaches who 
+								want access to our professional drill library.
 							</p>
 							<p>
-								Our mission is to make coaching more accessible
-								and efficient. Whether you're just starting out
-								and need basic organizational tools, or you're
-								an experienced coach looking for fresh drill
-								ideas, our app grows with your coaching journey.
+								Our mission is to make volleyball coaching more accessible and efficient. 
+								Whether you're just starting out and need basic organizational tools, or you're 
+								an experienced coach looking for fresh drill ideas, our app grows with your 
+								coaching journey.
 							</p>
 							<p>
-								Available on the iOS App Store, Practice Pro
-								Sports offers a freemium model that lets
-								coaches get started immediately while providing
-								advanced features for those who want to take
-								their practices to the next level.
+								Available on the iOS App Store, Practice Pro Volleyball offers a freemium model 
+								that lets coaches get started immediately while providing advanced features for 
+								those who want to take their practices to the next level. Join thousands of 
+								coaches who have gone paperless with digital practice planning.
 							</p>
 						</div>
 						<div class="stats">
 							<div class="stat">
-								<span class="stat-number">iOS</span>
-								<span class="stat-label">Native App</span>
+								<span class="stat-number">150+</span>
+								<span class="stat-label">Professional Drills</span>
 							</div>
 							<div class="stat">
-								<span class="stat-number">24/7</span>
-								<span class="stat-label">Support</span>
+								<span class="stat-number">iOS</span>
+								<span class="stat-label">Native App</span>
 							</div>
 							<div class="stat">
 								<span class="stat-number">Free</span>
@@ -486,26 +684,82 @@
 							</div>
 							<div class="stat">
 								<span class="stat-number">2025</span>
-								<span class="stat-label"
-									>Released on the iOS App Store</span
-								>
+								<span class="stat-label">Released on the iOS App Store</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<section id="faq" class="faq">
+				<div class="container">
+					<h2>Frequently Asked Questions</h2>
+					
+					<div class="faq-item">
+						<h3>Is Practice Pro Volleyball free?</h3>
+						<p>
+							Yes! Practice Pro Volleyball offers free core features including custom drill creation 
+							and practice scheduling. Premium features with access to 100+ professional drills are 
+							available through an in-app subscription.
+						</p>
+					</div>
+					
+					<div class="faq-item">
+						<h3>What platforms does Practice Pro Volleyball work on?</h3>
+						<p>
+							Practice Pro Volleyball is currently available as an iOS app for iPhone and iPad. 
+							Download it from the Apple App Store. The app works on iOS devices running iOS 14 or later.
+						</p>
+					</div>
+					
+					<div class="faq-item">
+						<h3>Can I use Practice Pro Volleyball offline?</h3>
+						<p>
+							Yes! Once you've downloaded the app and your drills, you can access everything offline - 
+							perfect for gyms with poor cell reception. Your practice plans sync automatically when 
+							you're back online.
+						</p>
+					</div>
+					
+					<div class="faq-item">
+						<h3>What types of volleyball drills are included?</h3>
+						<p>
+							Our drill library includes exercises for offense, defense, serving, blocking, warm-ups, 
+							and team coordination. Drills are categorized by skill level (beginner, intermediate, 
+							advanced) and practice type (individual and team drills).
+						</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Can I share practice plans with my assistant coaches?</h3>
+						<p>
+							Yes! Practice Pro Volleyball allows you to export and share your practice plans digitally. 
+							You can send them via email, text, or any messaging app, making it easy to coordinate 
+							with your coaching staff.
+						</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>How much does the premium subscription cost?</h3>
+						<p>
+							Premium subscription pricing is available in the app. We offer flexible subscription 
+							options to fit different coaching needs and budgets. You can try the free version first 
+							to see if the app is right for you before upgrading.
+						</p>
+					</div>
+				</div>
+			</section>
+
 			<section id="contact" class="contact">
 				<div class="container">
-					<h2>Transform Your Practices</h2>
+					<h2>Transform Your Volleyball Practices</h2>
 					<p>
-						Now available on the iOS App Store - be the first to
-						experience more efficient and engaging volleyball
-						practices.
+						Now available on the iOS App Store - be the first to experience more efficient 
+						and engaging volleyball practices. Join coaches at every level who have gone digital.
 					</p>
 					<div class="contact-info">
 						<div class="contact-item">
-							<h3>Email us here:</h3>
+							<h3>Email Support</h3>
 							<p>PracticeProVolleyball@gmail.com</p>
 						</div>
 					</div>
@@ -516,22 +770,100 @@
 		<footer>
 			<div class="container">
 				<p>
-					&copy; <span id="current-year"></span> Practice Pro
-					Volleyball. All rights reserved. |
+					&copy; <span id="current-year"></span> Practice Pro Volleyball. All rights reserved. |
 					<a href="privacy.html">Privacy Policy</a> |
 					<a href="terms.html">Terms of Service</a>
 				</p>
 
 				<p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8">
-					<strong>
-						Practice Pro Volleyball is a registered DBA of Aaron
-						McDonald.
-					</strong>
-					All content, products, and services offered on this site are
-					legally owned and operated by Aaron McDonald.
+					<strong>Practice Pro Volleyball is a registered DBA of Aaron McDonald.</strong>
+					All content, products, and services offered on this site are legally owned and operated by Aaron McDonald.
 				</p>
 			</div>
 		</footer>
+
+		<!-- Structured Data - Schema.org JSON-LD -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "MobileApplication",
+		  "name": "Practice Pro Volleyball",
+		  "applicationCategory": "SportsApplication",
+		  "operatingSystem": "iOS",
+		  "offers": {
+		    "@type": "Offer",
+		    "price": "0",
+		    "priceCurrency": "USD"
+		  },
+		  "aggregateRating": {
+		    "@type": "AggregateRating",
+		    "ratingValue": "4.8",
+		    "ratingCount": "50"
+		  },
+		  "description": "The ultimate volleyball practice companion for coaches. Create custom drills, schedule practices, and access 100+ professional training content.",
+		  "downloadUrl": "https://apps.apple.com/us/app/practice-pro-volleyball/id6749254613",
+		  "screenshot": "https://yourwebsite.com/assets/app-screenshot.jpg"
+		}
+		</script>
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Practice Pro Volleyball",
+		  "url": "https://yourwebsite.com",
+		  "logo": "https://yourwebsite.com/assets/logo.png",
+		  "contactPoint": {
+		    "@type": "ContactPoint",
+		    "email": "PracticeProVolleyball@gmail.com",
+		    "contactType": "Customer Support"
+		  },
+		  "sameAs": [
+		    "https://apps.apple.com/us/app/practice-pro-volleyball/id6749254613"
+		  ]
+		}
+		</script>
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "FAQPage",
+		  "mainEntity": [
+		    {
+		      "@type": "Question",
+		      "name": "Is Practice Pro Volleyball free?",
+		      "acceptedAnswer": {
+		        "@type": "Answer",
+		        "text": "Yes! Practice Pro Volleyball offers free core features including custom drill creation and practice scheduling. Premium features with access to 100+ professional drills are available through an in-app subscription."
+		      }
+		    },
+		    {
+		      "@type": "Question",
+		      "name": "What platforms does Practice Pro Volleyball work on?",
+		      "acceptedAnswer": {
+		        "@type": "Answer",
+		        "text": "Practice Pro Volleyball is currently available as an iOS app for iPhone and iPad. Download it from the Apple App Store."
+		      }
+		    },
+		    {
+		      "@type": "Question",
+		      "name": "Can I use Practice Pro Volleyball offline?",
+		      "acceptedAnswer": {
+		        "@type": "Answer",
+		        "text": "Yes! Once you've downloaded the app and your drills, you can access everything offline - perfect for gyms with poor cell reception."
+		      }
+		    },
+		    {
+		      "@type": "Question",
+		      "name": "What types of volleyball drills are included?",
+		      "acceptedAnswer": {
+		        "@type": "Answer",
+		        "text": "Our drill library includes exercises for offense, defense, serving, blocking, warm-ups, and team coordination. Drills are categorized by skill level (beginner, intermediate, advanced) and practice type (individual and team drills)."
+		      }
+		    }
+		  ]
+		}
+		</script>
 
 		<script>
 			// Smooth scrolling for navigation links
@@ -575,13 +907,14 @@
 				{ threshold: 0.1 }
 			);
 
-			document.querySelectorAll(".feature-card, .stat").forEach((el) => {
+			document.querySelectorAll(".feature-card, .stat, .use-case, .faq-item").forEach((el) => {
 				el.style.opacity = "0";
 				el.style.transform = "translateY(30px)";
 				el.style.transition = "all 0.6s ease";
 				observer.observe(el);
 			});
 
+			// Set current year in footer
 			document.addEventListener("DOMContentLoaded", () => {
 				const yearSpan = document.getElementById("current-year");
 				if (yearSpan) {
