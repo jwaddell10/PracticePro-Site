@@ -72,15 +72,31 @@
 		<link rel="preconnect" href="https://apps.apple.com" />
 		<link rel="dns-prefetch" href="https://apps.apple.com" />
 
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<!-- 180×180 -->
 		<!-- Favicons - using your logo -->
-		<link rel="icon" type="image/png" href="assets/NewPPlogo.png" />
-		<link rel="apple-touch-icon" href="assets/NewPPlogo.png" />
-		<link rel="shortcut icon" href="assets/NewPPlogo.png" />
+		<link rel="icon" type="image/png" href="assets/NewPPlogo.svg" />
+		<link rel="apple-touch-icon" href="assets/NewPPlogo.svg" />
+		<link rel="shortcut icon" href="assets/NewPPlogo.svg" />
 
 		<title>
 			Practice Pro Volleyball | Volleyball Coaches Practice Scheduling &
 			Drill App
 		</title>
+
+		<!-- PostHog Analytics -->
+		<script>
+			!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(/\/$/,'')+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+			posthog.init('phc_EEAoave0hVxO6CQdoEXU44OhCeKoIMJTk12iOUAyl8j', {
+				api_host: 'https://us.i.posthog.com',
+				person_profiles: 'identified_only'
+			})
+			posthog.register({
+				source: 'practice-pro-website'
+			})
+		</script>
 
 		<style>
 			* {
