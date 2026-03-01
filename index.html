@@ -88,14 +88,71 @@
 
 		<!-- PostHog Analytics -->
 		<script>
-			!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(/\/$/,'')+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-			posthog.init('phc_EEAoave0hVxO6CQdoEXU44OhCeKoIMJTk12iOUAyl8j', {
-				api_host: 'https://us.i.posthog.com',
-				person_profiles: 'identified_only'
-			})
+			!(function (t, e) {
+				var o, n, p, r;
+				e.__SV ||
+					((window.posthog = e),
+					(e._i = []),
+					(e.init = function (i, s, a) {
+						function g(t, e) {
+							var o = e.split(".");
+							(2 == o.length && ((t = t[o[0]]), (e = o[1])),
+								(t[e] = function () {
+									t.push(
+										[e].concat(
+											Array.prototype.slice.call(
+												arguments,
+												0,
+											),
+										),
+									);
+								}));
+						}
+						(((p = t.createElement("script")).type =
+							"text/javascript"),
+							(p.async = !0),
+							(p.src =
+								s.api_host.replace(/\/$/, "") +
+								"/static/array.js"),
+							(r =
+								t.getElementsByTagName(
+									"script",
+								)[0]).parentNode.insertBefore(p, r));
+						var u = e;
+						for (
+							void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+								u.people = u.people || [],
+								u.toString = function (t) {
+									var e = "posthog";
+									return (
+										"posthog" !== a && (e += "." + a),
+										t || (e += " (stub)"),
+										e
+									);
+								},
+								u.people.toString = function () {
+									return u.toString(1) + ".people (stub)";
+								},
+								o =
+									"capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
+										" ",
+									),
+								n = 0;
+							n < o.length;
+							n++
+						)
+							g(u, o[n]);
+						e._i.push([i, s, a]);
+					}),
+					(e.__SV = 1));
+			})(document, window.posthog || []);
+			posthog.init("phc_EEAoave0hVxO6CQdoEXU44OhCeKoIMJTk12iOUAyl8j", {
+				api_host: "https://us.i.posthog.com",
+				person_profiles: "identified_only",
+			});
 			posthog.register({
-				source: 'practice-pro-website'
-			})
+				source: "practice-pro-website",
+			});
 		</script>
 
 		<style>
@@ -609,15 +666,13 @@
 				<div class="container">
 					<div class="hero-content">
 						<h1>
-							Practice Pro Volleyball - iOS App for Volleyball
-							Coaches
+							The Ultimate Practice App for Volleyball Coaches
 						</h1>
 						<p>
 							The ultimate volleyball practice planning app for
-							high school, club, and youth coaches. Schedule
-							practices, create custom drills, and access 150+
-							professional volleyball training exercises. Stop
-							using paper - organize your season digitally.
+							coaches. Schedule practices, create drills, and
+							build out your custom practice plan. Try it free on
+							the app store
 						</p>
 						<a
 							href="https://apps.apple.com/us/app/practice-pro-volleyball/id6749254613"
@@ -636,7 +691,7 @@
 
 			<section id="features" class="features">
 				<div class="container">
-					<h2>Practice Features</h2>
+					<h2>Features</h2>
 					<div class="features-grid">
 						<div class="feature-card">
 							<div class="feature-icon">📝</div>
@@ -674,42 +729,6 @@
 					</div>
 				</div>
 			</section>
-
-			<section id="use-cases" class="use-cases">
-				<div class="container">
-					<h2>Perfect For Every Volleyball Coach</h2>
-					<div class="use-cases-grid">
-						<div class="use-case">
-							<h3>High School Volleyball Coaches</h3>
-							<p>
-								Organize your season, plan practices
-								efficiently, and keep your team competitive with
-								structured training plans. Perfect for varsity
-								and JV teams.
-							</p>
-						</div>
-						<div class="use-case">
-							<h3>Club Volleyball Coaches</h3>
-							<p>
-								Manage multiple teams and age groups with
-								customized drill libraries and flexible
-								scheduling tools. Scale your coaching across
-								different skill levels.
-							</p>
-						</div>
-						<div class="use-case">
-							<h3>Youth Volleyball Coaches</h3>
-							<p>
-								Access age-appropriate drills and simple
-								practice planning tools perfect for developing
-								young players. Build fundamentals with
-								beginner-friendly exercises.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<section class="benefits">
 				<div class="container">
 					<h2>Why Coaches Choose Practice Pro Volleyball</h2>
@@ -744,77 +763,33 @@
 					</ul>
 				</div>
 			</section>
-
-			<section id="about" class="about">
-				<div class="container">
-					<div class="about-content">
-						<div>
-							<h2>About Practice Pro Volleyball</h2>
-							<p>
-								Practice Pro Volleyball was developed to help
-								volleyball coaches at all levels organize their
-								training more effectively. We provide both free
-								tools for custom drill creation and practice
-								scheduling, plus premium features for coaches
-								who want access to our professional drill
-								library.
-							</p>
-							<p>
-								Our mission is to make volleyball coaching more
-								accessible and efficient. Whether you're just
-								starting out and need basic organizational
-								tools, or you're an experienced coach looking
-								for fresh drill ideas, our app grows with your
-								coaching journey.
-							</p>
-							<p>
-								Available on the iOS App Store, Practice Pro
-								Volleyball offers a freemium model that lets
-								coaches get started immediately while providing
-								advanced features for those who want to take
-								their practices to the next level. Join
-								thousands of coaches who have gone paperless
-								with digital practice planning.
-							</p>
-						</div>
-						<div class="stats">
-							<div class="stat">
-								<span class="stat-number">150+</span>
-								<span class="stat-label"
-									>Professional Drills</span
-								>
-							</div>
-							<div class="stat">
-								<span class="stat-number">iOS</span>
-								<span class="stat-label">Native App</span>
-							</div>
-							<div class="stat">
-								<span class="stat-number">Free</span>
-								<span class="stat-label">Core Features</span>
-							</div>
-							<div class="stat">
-								<span class="stat-number">2025</span>
-								<span class="stat-label"
-									>Released on the iOS App Store</span
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<section id="faq" class="faq">
 				<div class="container">
 					<h2>Frequently Asked Questions</h2>
+
+					<div class="faq-item">
+						<h3>Who is Practice Pro Volleyball for?</h3>
+						<p>
+							Our dream was to make it so any volleyball coach
+							would get value from it. If you're a coach who likes
+							to plan ahead and structure your practices (or if
+							you want to get better at this) this app is for you.
+							No need for paper anymore, with our app you can do
+							it all digitally
+						</p>
+					</div>
 
 					<div class="faq-item">
 						<h3>Is Practice Pro Volleyball free?</h3>
 						<p>
 							Yes! Practice Pro Volleyball offers free core
 							features including custom drill creation and
-							practice scheduling. Premium features with access to
-							100+ professional drills are available through an
-							in-app subscription.
+							practice scheduling. Premium features are available
+							as well through an in-app subscription, which
+							provides access to 200+ professional drills and
+							additional organizational tools. You can try the
+							free version first to see if the app is right for
+							you before upgrading.
 						</p>
 					</div>
 
@@ -827,17 +802,6 @@
 							iOS app for iPhone and iPad. Download it from the
 							Apple App Store. The app works on iOS devices
 							running iOS 14 or later.
-						</p>
-					</div>
-
-					<div class="faq-item">
-						<h3>What types of volleyball drills are included?</h3>
-						<p>
-							Our drill library includes exercises for offense,
-							defense, serving, blocking, warm-ups, and team
-							coordination. Drills are categorized by skill level
-							(beginner, intermediate, advanced) and practice type
-							(individual and team drills).
 						</p>
 					</div>
 
@@ -856,13 +820,13 @@
 					</div>
 
 					<div class="faq-item">
-						<h3>How much does the premium subscription cost?</h3>
+						<h3>What do I get when I subscribe to Premium?</h3>
 						<p>
-							Premium subscription pricing is available in the
-							app. We offer flexible subscription options to fit
-							different coaching needs and budgets. You can try
-							the free version first to see if the app is right
-							for you before upgrading.
+							Tons of useful features like our premium drill
+							library with 200+ drills from professional
+							volleyball coaches. Practice statistics (what % of
+							your practice was offense? defense? etc), and
+							ability to upload images to your created drills
 						</p>
 					</div>
 				</div>
