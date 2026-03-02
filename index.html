@@ -678,6 +678,8 @@
 							href="https://apps.apple.com/us/app/practice-pro-volleyball/id6749254613"
 							target="_blank"
 							rel="noopener noreferrer"
+							id="app-store-download-hero"
+							onclick="trackAppStoreClick('hero')"
 							class="app-store-button"
 						>
 							<img
@@ -955,6 +957,16 @@
 		</script>
 
 		<script>
+			// Track App Store button clicks
+			function trackAppStoreClick(location) {
+				if (window.posthog) {
+					posthog.capture("app_store_button_clicked", {
+						button_location: location,
+						page_url: window.location.href,
+						timestamp: new Date().toISOString(),
+					});
+				}
+			}
 			// Smooth scrolling for navigation links
 			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 				anchor.addEventListener("click", function (e) {
